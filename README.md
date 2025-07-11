@@ -1,57 +1,95 @@
-# Recomendador de Precios de Inmuebles en Barcelona
+# Barcelona Real Estate Price Predictor
 
-### Análisis del mercado inmobiliario mediante Web Scraping, Clustering y modelos de Regresión.
 
-> **Nota para el reclutador:** Este proyecto es el resultado de mi Trabajo de Fin de Máster en Big Data, donde apliqué un pipeline completo de ciencia de datos para analizar y predecir los precios de la vivienda en uno de los mercados más dinámicos de España.
+An end-to-end data science project that scrapes real estate data, performs market segmentation using clustering, and predicts housing prices in Barcelona using regression models.
 
-## 📜 Descripción
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#-about-the-project">About The Project</a></li>
+    <li><a href="#-key-results">Key Results</a></li>
+    <li><a href="#-built-with">Built With</a></li>
+    <li><a href="#-getting-started">Getting Started</a></li>
+    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-roadmap">Roadmap</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contact">Contact</a></li>
+    <li><a href="#-acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-[cite_start]Este proyecto nace de la creciente dificultad para el acceso a la vivienda en España, especialmente en grandes ciudades como Barcelona[cite: 69, 70, 71]. [cite_start]Motivado por este contexto, el objetivo principal fue desarrollar una herramienta de machine learning capaz de **estimar con precisión el precio de venta de un inmueble en Barcelona** a partir de sus características[cite: 78].
+---
 
-[cite_start]Para lograrlo, se realizó un proceso integral que abarca desde la recolección de datos mediante **web scraping** de más de 12,000 anuncios en Idealista [cite: 75][cite_start], hasta el entrenamiento y la evaluación de múltiples modelos de regresión y clustering, culminando en una **interfaz gráfica interactiva** para el usuario final[cite: 1348, 1351].
+##  About The Project
 
-## ✨ Características Principales
+This project was developed as part of my Master's Thesis in Big Data Management and Analysis. It addresses the growing challenge of accessing affordable housing in Spain's major cities, with a special focus on the highly competitive Barcelona market.
 
-* [cite_start]**Recolección de Datos Automatizada:** Se implementó un scraper con `Selenium` y `Beautiful Soup` para extraer datos detallados de Idealista, superando las medidas de anti-scraping del portal[cite: 399, 402].
-* [cite_start]**Ingeniería de Características:** Limpieza y preprocesamiento exhaustivo de los datos, incluyendo la creación de nuevas variables a partir de datos textuales (ej. `ascensor`) [cite: 627][cite_start], codificación de variables categóricas [cite: 612] [cite_start]y gestión de valores nulos[cite: 643].
-* [cite_start]**Segmentación del Mercado con Clustering:** Se aplicó el algoritmo **K-Means** para segmentar el mercado en 4 clústeres distintos [cite: 858][cite_start], identificando arquetipos de propiedades desde económicas hasta lujo[cite: 880, 901, 920, 939].
-* [cite_start]**Modelado Predictivo Avanzado:** Se entrenaron y evaluaron 7 algoritmos de regresión distintos [cite: 1165][cite_start], incluyendo `Lasso` [cite: 1166][cite_start], `Random Forest` [cite: 1173][cite_start], `Gradient Boosting` [cite: 1175][cite_start], `XGBoost` y Redes Neuronales (`MLPRegressor`)[cite: 1178].
-* [cite_start]**Interfaz de Usuario Interactiva:** Se desarrolló una aplicación web con `Streamlit` que permite a cualquier usuario introducir las características de una vivienda y obtener una estimación de su precio al instante[cite: 1348, 1351, 1353].
+The main goal was to engineer a machine learning tool capable of accurately estimating the sale price of a property in Barcelona based on its features. The project covers the full data science pipeline:
 
-## 🛠️ Stack Tecnológico
+* **Automated Data Collection:** Scraped over 12,000 property listings from the Spanish real estate portal [Idealista](https://www.idealista.com) using a custom web scraper.
+* **In-depth Data Analysis:** Performed extensive data cleaning, feature engineering, and exploratory data analysis (EDA) to understand the market dynamics.
+* **Market Segmentation:** Applied K-Means clustering to segment the properties into four distinct market categories, from budget-friendly apartments to premium luxury homes.
+* **Predictive Modeling:** Trained and evaluated seven different regression algorithms to find the most accurate price prediction model.
+* **Interactive Application:** Deployed the final model into an intuitive and user-friendly web application using `Streamlit`.
 
-| Área | Tecnologías y Librerías |
-| :--- | :--- |
-| **Análisis y Modelado** | [cite_start]`Python`, `Pandas`, `NumPy`, `Scikit-learn` [cite: 2225, 2228, 2229, 2230, 2231, 2232, 2233, 2234, 2236, 2237][cite_start], `XGBoost` [cite: 2237][cite_start], `Matplotlib` [cite: 2240][cite_start], `Seaborn` [cite: 2242] |
-| **Web Scraping** | [cite_start]`Selenium` [cite: 1440, 1441][cite_start], `Beautiful Soup` [cite: 1435][cite_start], `undetected-chromedriver` [cite: 1443] |
-| **Aplicación Web** | [cite_start]`Streamlit` [cite: 2820] |
-| **Desarrollo** | [cite_start]`Jupyter Notebooks`, `Joblib` [cite: 2243] |
+---
 
-## 📊 Resultados Destacados
+## Key Results
 
-Tras un riguroso proceso de validación cruzada y optimización de hiperparámetros, se obtuvieron los siguientes resultados:
+After a rigorous process of hyperparameter tuning and cross-validation, the project yielded the following key results:
 
-* [cite_start]El modelo con mejor rendimiento fue **Gradient Boosting** (entrenado con el dataset sin outliers), alcanzando un **coeficiente de determinación (R²) de 0.812**[cite: 1256, 1309]. Esto significa que el modelo es capaz de explicar aproximadamente el 81% de la variabilidad del precio de la vivienda.
-* [cite_start]El análisis de clustering con K-Means ($k=4$) reveló 4 segmentos de mercado bien definidos[cite: 858]:
-    1.  [cite_start]**Clúster 0:** Propiedades estándar, funcionales y accesibles[cite: 880].
-    2.  [cite_start]**Clúster 1:** Propiedades amplias, bien equipadas y de gama alta[cite: 901].
-    3.  [cite_start]**Clúster 2:** Propiedades pequeñas y económicas, con pocas comodidades[cite: 920].
-    4.  [cite_start]**Clúster 3:** Propiedades de lujo y exclusivas con comodidades premium[cite: 939].
+* The best-performing model was **Gradient Boosting** (trained on a dataset with outliers removed), which achieved a **Coefficient of Determination (R²) of 0.812**. This indicates that the model can explain over 81% of the price variability in the dataset.
+* The K-Means clustering analysis ($k=4$) successfully identified four distinct property archetypes, providing valuable market insights.
 
-### Demostración de la Interfaz
+---
 
-[cite_start]Captura de la aplicación desarrollada con Streamlit que permite predicciones en tiempo real[cite: 1376].
+## Built With
 
-![Interfaz de Streamlit](https://i.imgur.com/2A2G1nK.png)
+This project was built using the following technologies and libraries:
 
-## 🔧 Cómo Empezar
+* **Core & Modeling:**
+    * [Python](https://www.python.org)
+    * [scikit-learn](https://scikit-learn.org/stable/)
+    * [Pandas](https://pandas.pydata.org)
+    * [Numpy](https://numpy.org)
+    * [XGBoost](https://xgboost.readthedocs.io/en/stable/index.html#)
+* **Web Scraping:**
+    * [Selenium](https://www.selenium.dev)
+    * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* **Web Application:**
+    * ![Streamlit](https://streamlit.io)
 
-Para ejecutar este proyecto de forma local, sigue estos pasos:
+---
 
-**1. Prerrequisitos**
-* Asegúrate de tener Python 3.8 o superior instalado.
+## 🚀 Getting Started
 
-**2. Clonar el Repositorio**
-```bash
-git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-cd tu-repositorio
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Python 3.8+ and `pip` installed on your system.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/carlosgomez1998/Barcelona-Housing-Price-Prediction.git](https://github.com/carlosgomez1998/Barcelona-Housing-Price-Prediction.git)
+    cd Barcelona-Housing-Price-Prediction
+    ```
+    *(Note: Remember to replace the URL with your actual repository URL)*
+
+2.  **Create and activate a virtual environment:**
+    ```sh
+    # For macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # For Windows
+    python -m venv venv
+    .\venv\Scripts\activate
+    ```
+
+3.  **Install the required dependencies:**
+    ```sh
+    pip install -r requirements.txt
+    ```
