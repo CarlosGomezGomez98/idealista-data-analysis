@@ -102,3 +102,39 @@ The primary deliverable of this project is the interactive web application. To l
 streamlit run app.py
 ```
 
+
+## Roadmap
+
+Future enhancements for this project could include:
+
+* [ ] **Expand the Dataset:** Incorporate socioeconomic data, historical transaction records, and proximity to amenities (e.g., public transport, schools) to enrich the model.
+* [ ] **Longitudinal Analysis:** Study how price trends evolve over time by collecting data periodically to capture market shifts.
+* [ ] **Advanced Modeling:** Experiment with more complex neural network architectures or other machine learning algorithms to improve predictive accuracy.
+
+See the [open issues](https://github.com/CarlosGomezGomez98/idealista-data-analysis/issues) for a full list of proposed features (and known issues).
+
+---
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+*(Note: You'll need to create a file named `LICENSE.txt` in your repository with the MIT License text).*
+
+---
+
+## Contact
+
+Carlos Gómez Gómez - carlosgomezgomez1998@gmail.com
+
+Project Link: [https://github.com/CarlosGomezGomez98/idealista-data-analysis](https://github.com/CarlosGomezGomez98/idealista-data-analysis)
+
+---
+
+## Acknowledgments
+
+A few acknowledgments for this project:
+
+* My thesis advisor, **Jorge Crespo Álvarez**, for the guidance and support.
+* The open-source community for creating amazing tools like `scikit-learn`, `pandas`, and `Streamlit`.
+
