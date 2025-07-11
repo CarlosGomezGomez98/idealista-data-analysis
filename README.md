@@ -93,3 +93,12 @@ Make sure you have Python 3.8+ and `pip` installed on your system.
     ```sh
     pip install -r requirements.txt
     ```
+---
+##  Usage
+
+The primary deliverable of this project is the interactive web application. To launch it, run the following command from the root directory of the project:
+
+```sh
+streamlit run app.py
+```
+
