@@ -1,6 +1,13 @@
 # Barcelona Real Estate Price Predictor
 
+<div align="center">
 
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
 An end-to-end data science project that scrapes real estate data, performs market segmentation using clustering, and predicts housing prices in Barcelona using regression models.
 
 <details>
@@ -125,9 +132,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Carlos Gómez Gómez - carlosgomezgomez1998@gmail.com
 
-Project Link: [https://github.com/CarlosGomezGomez98/idealista-data-analysis](https://github.com/CarlosGomezGomez98/idealista-data-analysis)
+* Email: [carlosgomezgomez1998@gmail.com](mailto:carlosgomezgomez1998@gmail.com)
+* Likedin: [carlos-gómez-gómez](https://www.linkedin.com/in/carlos-gómez-gómez-a91961185/)
+* Project Link: [https://github.com/CarlosGomezGomez98/idealista-data-analysis](https://github.com/CarlosGomezGomez98/idealista-data-analysis)
+
 
 ---
 
