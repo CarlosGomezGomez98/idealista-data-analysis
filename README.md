@@ -57,7 +57,7 @@ This project was built using the following technologies and libraries:
     * [Selenium](https://www.selenium.dev)
     * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * **Web Application:**
-    * ![Streamlit](https://streamlit.io)
+    * [Streamlit](https://streamlit.io)
 
 ---
 
