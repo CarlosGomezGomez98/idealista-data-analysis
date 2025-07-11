@@ -6,7 +6,7 @@ An end-to-end data science project that scrapes real estate data, performs marke
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#-about-the-project">About The Project</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#-key-results">Key Results</a></li>
     <li><a href="#-built-with">Built With</a></li>
     <li><a href="#-getting-started">Getting Started</a></li>
@@ -20,7 +20,7 @@ An end-to-end data science project that scrapes real estate data, performs marke
 
 ---
 
-##  About The Project
+## About The Project
 
 This project was developed as part of my Master's Thesis in Big Data Management and Analysis. It addresses the growing challenge of accessing affordable housing in Spain's major cities, with a special focus on the highly competitive Barcelona market.
 
@@ -61,7 +61,7 @@ This project was built using the following technologies and libraries:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
