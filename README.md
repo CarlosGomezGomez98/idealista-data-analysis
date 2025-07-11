@@ -1,11 +1,28 @@
 # Barcelona Real Estate Price Predictor
+<div align="center">
+<!-- GitHub Stats -->
+<a href="https://github.com/CarlosGomezGomez98/idealista-data-analysis">
+    <img src="https://img.shields.io/github/stars/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="GitHub stars">
+</a>
+<a href="https://github.com/CarlosGomezGomez98/idealista-data-analysis/fork">
+    <img src="https://img.shields.io/github/forks/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="GitHub forks">
+</a>
+<a href="https://github.com/CarlosGomezGomez98/idealista-data-analysis/issues">
+    <img src="https://img.shields.io/github/issues/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="GitHub issues">
+</a>
+<a href="https://github.com/CarlosGomezGomez98/idealista-data-analysis/blob/main/LICENSE.txt">
+    <img src="https://img.shields.io/github/license/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="License">
+</a>
+</div>
 
 <div align="center">
-
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+<!-- Technologies -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
+<img src="https://img.shields.io/badge/Numpy-013243?style=flat-square&logo=numpy&logoColor=white" alt="Numpy">
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white" alt="Streamlit">
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium">
 
 </div>
 An end-to-end data science project that scrapes real estate data, performs market segmentation using clustering, and predicts housing prices in Barcelona using regression models.
