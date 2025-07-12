@@ -1,0 +1,21 @@
+# Python Virtual Environments
+/venv/
+/.venv/
+__pycache__/
+*.pyc
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Configuration Files
+.vscode/
+.idea/
+
+# Jupyter Notebook Files
+.ipynb_checkpoints
+
+# Data Files
+# Uncomment the following line if your .csv files are very large (>100MB)
+# and you don't want to upload them to GitHub.
+# data/*.csv
