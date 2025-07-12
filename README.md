@@ -11,8 +11,9 @@
     <img src="https://img.shields.io/github/issues/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="GitHub issues">
 </a>
 <a href="https://github.com/CarlosGomezGomez98/idealista-data-analysis/blob/main/LICENSE.txt">
-    <img src="https://img.shields.io/github/license/CarlosGomezGomez98/idealista-data-analysis?style=flat-square" alt="License">
+     <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </a>
+    
 </div>
 
 <div align="center">
