@@ -121,12 +121,22 @@ Make sure you have Python 3.8+ and `pip` installed on your system.
 ---
 ##  Usage
 
-The primary deliverable of this project is the interactive web application. To launch it, run the following command from the root directory of the project:
+### 1. Generate the Prediction Models
+
+The interactive application requires the trained model files (`.pkl`). The necessary datasets are already included in the `/data` folder.
+
+To generate the models, you only need to run the final notebook. Navigate to the `/notebooks` directory and run all the cells in:
+* **`05_Modeling_and_Evaluation.ipynb`**
+
+This will create the necessary model and scaler files in the `/models` directory.
+
+### 2. Launch the Application
+
+Once the models are generated, return to the root directory and launch the Streamlit app:
 
 ```sh
 streamlit run app.py
 ```
-
 
 ## Roadmap
 
